@@ -415,6 +415,7 @@
         }
 
         .accommodation-info h1 {
+
             font-size: xx-large;
             color: #4d6cdc;
         }
@@ -448,19 +449,16 @@
             }
 
             .accommodation-info {
+                font-size: x-large;
                 margin-top: 50px;
             }
 
             .accommodation-info h1 {
                 font-size: x-large;
+                color: #4d6cdc;
             }
         }
 
-        .accommodation-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
 
         .features-section {
             background: #f8f8f8;
@@ -552,6 +550,12 @@
             line-height: 2.5;
         }
 
+        .hero-heading {
+            margin-top: 0.5rem;
+            font-size: medium;
+            line-height: 2rem;
+        }
+
         /* Media Query for larger screens */
         @media (min-width: 768px) {
             .custom-flex-container {
@@ -567,6 +571,15 @@
                 padding-left: 24px;
             }
 
+            .hero-heading {
+                margin-top: 0.5rem;
+                font-size: large;
+            }
+
+            .custom-flex-container {
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+            }
         }
     </style>
 </head>
@@ -624,10 +637,12 @@
     <section class="accommodation-hero animate-bg">
         <div class="container mx-auto">
             <div class="accommodation-info animate-text">
-                <h1><b>Accommodation Service</b></h1>
+                <h1><b>Transit Card and Mobile SIM Services</b></h1>
+                <p class="hero-heading">Stay connected and on-the-move seamlessly in Canada.</p>
             </div>
         </div>
     </section>
+
     <div class="custom-flex-container">
         <!-- Left Side: Animation Logo -->
         <div class="custom-flex-item custom-animation-container" data-aos="fade-right">
@@ -636,51 +651,87 @@
 
         <!-- Right Side: Content -->
         <div class="custom-flex-item custom-content-container" data-aos="fade-left">
-            <h2 class="custom-heading">Step into your new home</h2>
+            <h2 class="custom-heading">Connectivity & Mobility: Simplified</h2>
             <p class="custom-paragraph">
-                with our Accommodation Services. With a fully furnished room ready for you, say goodbye to the
-                stress of house hunting. Settle in, relax, and start your Canadian journey on
-                a comfortable note.
+                Whether it's commuting efficiently or staying in touch with loved ones, Students Help Hub ensures you're
+                always connected and mobile in Canada.
             </p>
         </div>
     </div>
-    <br>
-    <!-- Accommodation features section -->
+
+    <!-- Transit Card and Mobile SIM Services features section -->
     <section class="features-section">
         <div class="container mx-auto">
-            <h1 class="text-center mb-10" style="font-size: x-large; font-weight: bold; color: #424242;">Our Features
-            </h1>
+            <h1 class="text-center mb-10" style="font-size: x-large; font-weight: bold; color: #424242;">Our
+                Connectivity Services</h1>
 
             <div class="accommodation-features">
                 <!-- Feature card 1 -->
                 <div class="feature-card" data-aos="fade-up">
                     <div class="icon-bg">
-                        <i class="fas fa-bed feature-icon"></i>
+                        <i class="fas fa-subway feature-icon"></i>
                     </div>
-                    <h3><b>Comfortable Rooms</b></h3>
-                    <p>Experience the most comfortable rooms with all the necessary amenities for a perfect stay.</p>
+                    <h3><b>Transit Card Assistance</b></h3>
+                    <p>Seamless assistance in obtaining your transit card, ensuring efficient commutes right from day
+                        one.</p>
                 </div>
+
                 <!-- Feature card 2 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="icon-bg">
-                        <i class="fas fa-wifi feature-icon"></i>
+                        <i class="fas fa-mobile-alt feature-icon"></i>
                     </div>
-                    <h3><b>High-speed WiFi</b></h3>
-                    <p>Stay connected with our high-speed WiFi ensuring you can work or stream without any
-                        interruptions.</p>
+                    <h3><b>Mobile SIM Activation</b></h3>
+                    <p>Get the best mobile plans tailored to your needs and stay connected with friends, family, and
+                        opportunities.</p>
                 </div>
+
                 <!-- Feature card 3 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-bg">
-                        <i class="fas fa-concierge-bell feature-icon"></i>
+                        <i class="fas fa-info-circle feature-icon"></i>
                     </div>
-                    <h3><b>24/7 Services</b></h3>
-                    <p>Our staff is available 24/7 ensuring all your needs are taken care of anytime.</p>
+                    <h3><b>Usage Guidance</b></h3>
+                    <p>Understand the nuances of using transit systems and mobile services in Canada with our
+                        informative sessions.</p>
                 </div>
-                <!-- ... You can add more feature cards ... -->
+
+                <!-- Feature card 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon-bg">
+                        <i class="fas fa-money-bill-wave feature-icon"></i>
+                    </div>
+                    <h3><b>Cost-effective Solutions</b></h3>
+                    <p>We provide recommendations to ensure you get the most value for your money in both transit and
+                        mobile services.</p>
+                </div>
+
+                <!-- Feature card 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon-bg">
+                        <i class="fas fa-sync-alt feature-icon"></i>
+                    </div>
+                    <h3><b>Recharge & Renewal Assistance</b></h3>
+                    <p>Never run out of credit. We assist in recharging your transit card and renewing mobile plans
+                        without any hassles.</p>
+                </div>
+
+                <!-- Feature card 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="icon-bg">
+                        <i class="fas fa-headset feature-icon"></i>
+                    </div>
+                    <h3><b>24/7 Support</b></h3>
+                    <p>Any issues or queries? Our dedicated team is here round the clock to ensure you're always
+                        connected and on the move.</p>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+
 
 
 
@@ -854,7 +905,7 @@
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'house.json'
+            path: 'transit-card-mobile-sim.json'
         });
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {

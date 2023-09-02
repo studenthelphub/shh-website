@@ -19,7 +19,6 @@
         rel="stylesheet">
 
     <style>
-        
         html {
             scroll-behavior: smooth;
         }
@@ -171,6 +170,7 @@
             font-weight: 600;
             /* Poppins semi-bold */
             color: #333;
+            font-size: 30px;
         }
 
         .hero-content p {
@@ -216,6 +216,26 @@
             100% {
                 transform: scale(1);
                 opacity: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero-section {
+                font-size: 16px;
+            }
+
+            .hero-content h1 {
+                font-weight: 600;
+                /* Poppins semi-bold */
+                color: #333;
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-weight: 400;
+                /* Open Sans regular */
+                color: #555;
+                line-height: 2rem;
             }
         }
 
@@ -363,7 +383,7 @@
                 margin-left: 0.75rem;
             }
         }
-        
+
 
         /* Hide the Scroll Down Indicator on small screens */
         .scroll-indicator {
@@ -382,11 +402,13 @@
                 justify-content: start;
             }
         }
-        .main-page{
+
+        .main-page {
             height: auto;
         }
+
         @media (min-width: 768px) {
-            .main-page{
+            .main-page {
                 height: 100vh;
             }
         }
@@ -412,9 +434,9 @@
                 <!-- Desktop Nav Links with transition on hover -->
                 <div class="hidden lg:flex items-center space-x-4 transition-all">
                     <a href="index.html" class="px-4 py-2 hover:text-primary">Home</a>
-                    <a href="#services" class="px-4 py-2 hover:text-primary">Services</a>
+                    <a href="index.html#services" class="px-4 py-2 hover:text-primary">Services</a>
                     <a href="about.html" class="px-4 py-2 hover:text-primary">About Us</a>
-                    <a href="#faq" class="px-4 py-2 hover:text-primary">FAQ's</a>
+                    <a href="index.html#faq" class="px-4 py-2 hover:text-primary">FAQ's</a>
                     <a href="contact.html"
                         class="py-2 px-4 bg-primary text-white rounded-lg hover:bg-opacity-90">Contact
                         Now</a>
@@ -433,11 +455,11 @@
                     x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition transform origin-top-right ease-out duration-200"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-                    class="absolute top-full right-5 w-64 mt-2 bg-white rounded-lg shadow-md py-4 lg:hidden">
+                    class="absolute top-full right-0 w-64 mt-2 bg-white rounded-lg shadow-md py-4 lg:hidden">
                     <ul class="block space-y-2">
                         <li><a href="index.html" class="block px-4 py-2 hover:text-primary">Home</a></li>
-                        <li><a href="#services" class="block px-4 py-2 hover:text-primary">Services</a></li>
-                        <li><a href="#faq" class="block px-4 py-2 hover:text-primary">FAQ's</a></li>
+                        <li><a href="index.html#services" class="block px-4 py-2 hover:text-primary">Services</a></li>
+                        <li><a href="index.html#faq" class="block px-4 py-2 hover:text-primary">FAQ's</a></li>
                         <li><a href="about.html" class="block px-4 py-2 hover:text-primary">About Us</a></li>
                         <li><a href="contact.html" class="block px-4 py-2 hover:text-primary">Contact Us</a></li>
 
@@ -453,10 +475,10 @@
                     <div class="w-full lg:w-5/12">
                         <!-- Hero Content -->
                         <div class="hero-content pt-10" data-aos="fade-in">
-                            <h1
-                                class="mb-4 text-4xl font-extrabold leading-snug text-dark sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                                Ready to Kickstart Your<br>Canadian Adventure?
-                            </h1>
+                            <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
+                            style="line-height: 1.5;">
+                            Ready to Kickstart Your Canadian Adventure?
+                        </h2>
                             <p class="max-w-[480px] mb-4 font-semibold text-xl text-body-color">
                                 Your trusted guide for a seamless start in Canada. We're here to turn your Canadian
                                 dream
@@ -469,20 +491,20 @@
                             <!-- Buttons -->
                             <ul class="flex flex-wrap gap-4" data-aos="fade-up">
                                 <li>
-                                    <a href="contact.html"
+                                    <a href="contact.html" style="margin-left: 0px;"
                                         class="inline-flex items-center justify-center rounded-lg bg-primary py-3 px-8 text-center text-base font-normal text-white hover:bg-opacity-90 shadow-md transition transform hover:scale-105 button-shadow">
                                         Contact Now
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"
-                                        class="inline-flex items-center rounded-lg bg-white ml-3 justify-center py-3 px-8 text-center text-base font-normal text-body-color hover:text-primary transition transform hover:scale-105 button-shadow">
+                                        class="inline-flex items-center rounded-lg bg-white justify-center py-3 px-8 text-center text-base font-normal text-body-color hover:text-primary transition transform hover:scale-105 button-shadow">
                                         Download App
                                     </a>
                                 </li>
                             </ul>
                             <!-- Partner Logos -->
-                            <div class="clients pt-16" data-aos="fade-in">
+                            <div class="clients" style="padding-top: 2rem;" data-aos="fade-in">
                                 <h6 class="mb-4 flex items-center text-sm font-medium text-body-color">
                                     Some Of Our Partners
                                     <span class="ml-2 inline-block h-[1px] w-8 bg-body-color"></span>
@@ -532,7 +554,7 @@
                         <span class="mb-2 block text-lg font-semibold text-primary" style="margin-top: 3rem;">
                             Our Services
                         </span>
-                        <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
+                        <h2 class="mb-4 text-3xl font-bold text-dark sm:text-xl md:text-[20px]"
                             style="margin-top: 20px;">
                             What We Offer
                         </h2>
@@ -569,7 +591,7 @@
 
                     <!-- Banking and Credit Services -->
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-8">
-                        <a href="#banking-link" class="service-link">
+                        <a href="banking-credit-card.html" class="service-link">
                             <div class="service-card rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
                                 data-aos="fade-up">
                                 <div
@@ -592,7 +614,7 @@
 
                     <!-- Driving License and SIN Number -->
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-8">
-                        <a href="#driving-license-link" class="service-link">
+                        <a href="driving-license-sin-number.html" class="service-link">
                             <div class="service-card rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
                                 data-aos="fade-up">
                                 <div
@@ -615,7 +637,7 @@
 
                     <!-- BCID and Medical Card -->
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-8">
-                        <a href="#bcid-link" class="service-link">
+                        <a href="bcid-medical-card.html" class="service-link">
                             <div class="service-card rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
                                 data-aos="fade-up">
                                 <div
@@ -637,7 +659,7 @@
 
                     <!-- Transit Card, Mobile SIM -->
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-8">
-                        <a href="#transit-card-link" class="service-link">
+                        <a href="transit-mobile-sim.html" class="service-link">
                             <div class="service-card rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
                                 data-aos="fade-up">
                                 <div
@@ -661,7 +683,7 @@
 
                     <!-- Job Find -->
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3 mb-8">
-                        <a href="#job-find-link" class="service-link">
+                        <a href="job-service.html" class="service-link">
                             <div class="service-card rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10"
                                 data-aos="fade-up">
                                 <div
@@ -702,8 +724,8 @@
                         <span class="mb-2 block text-lg font-semibold text-primary">
                             FAQ
                         </span>
-                        <h2 class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
-                            style="margin-top: 20px;">
+                        <h2 class="mb-4 text-3xl font-bold text-dark sm:text-xl md:text-[20px]"
+                            style="margin-top: 20px;line-height: 3rem;">
                             Got Questions About Your Transition?
                         </h2>
                         <p class="text-base text-body-color" style="margin-top: 20px;">
@@ -936,7 +958,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="banking.html"
+                                <a href="banking-credit-card.html"
                                     class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                                     Banking
                                 </a>
@@ -948,7 +970,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="bcid-medical.html"
+                                <a href="bcid-medical-card.html"
                                     class="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary">
                                     BCID and Medical Card
                                 </a>

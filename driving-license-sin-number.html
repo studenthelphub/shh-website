@@ -415,6 +415,7 @@
         }
 
         .accommodation-info h1 {
+
             font-size: xx-large;
             color: #4d6cdc;
         }
@@ -448,19 +449,14 @@
             }
 
             .accommodation-info {
+                font-size: x-large;
                 margin-top: 50px;
             }
-
             .accommodation-info h1 {
                 font-size: x-large;
             }
         }
 
-        .accommodation-features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
 
         .features-section {
             background: #f8f8f8;
@@ -538,6 +534,7 @@
 
         .custom-content-container {
             padding: 0 24px;
+            margin-top: 2rem;
         }
 
         .custom-heading {
@@ -550,6 +547,12 @@
         .custom-paragraph {
             margin-bottom: 16px;
             line-height: 2.5;
+        }
+
+        .hero-heading {
+            margin-top: 0.5rem;
+            font-size: medium;
+            line-height: 2rem;
         }
 
         /* Media Query for larger screens */
@@ -565,8 +568,17 @@
 
             .custom-content-container {
                 padding-left: 24px;
+                margin-top: 0;
             }
 
+            .hero-heading {
+                margin-top: 0.5rem;
+                font-size: large;
+            }
+            .custom-flex-container{
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+            }
         }
     </style>
 </head>
@@ -624,10 +636,12 @@
     <section class="accommodation-hero animate-bg">
         <div class="container mx-auto">
             <div class="accommodation-info animate-text">
-                <h1><b>Accommodation Service</b></h1>
+                <h1><b>Driving License and SIN Number Services</b></h1>
+                <p class="hero-heading">Your essential credentials for living and working in Canada, simplified.</p>
             </div>
         </div>
     </section>
+
     <div class="custom-flex-container">
         <!-- Left Side: Animation Logo -->
         <div class="custom-flex-item custom-animation-container" data-aos="fade-right">
@@ -636,48 +650,80 @@
 
         <!-- Right Side: Content -->
         <div class="custom-flex-item custom-content-container" data-aos="fade-left">
-            <h2 class="custom-heading">Step into your new home</h2>
+            <h2 class="custom-heading">Driving and Working in Canada Made Easy</h2>
             <p class="custom-paragraph">
-                with our Accommodation Services. With a fully furnished room ready for you, say goodbye to the
-                stress of house hunting. Settle in, relax, and start your Canadian journey on
-                a comfortable note.
+                Acquiring a Driving License and SIN Number in Canada is a pivotal step for any newcomer. With Students
+                Help Hub, navigate these essential processes with ease and confidence.
             </p>
         </div>
     </div>
-    <br>
-    <!-- Accommodation features section -->
+
+    <!-- Driving License and SIN Number Services features section -->
     <section class="features-section">
         <div class="container mx-auto">
-            <h1 class="text-center mb-10" style="font-size: x-large; font-weight: bold; color: #424242;">Our Features
+            <h1 class="text-center mb-10" style="font-size: x-large; font-weight: bold; color: #424242;">Our Services
             </h1>
 
             <div class="accommodation-features">
                 <!-- Feature card 1 -->
                 <div class="feature-card" data-aos="fade-up">
                     <div class="icon-bg">
-                        <i class="fas fa-bed feature-icon"></i>
+                        <i class="fas fa-car feature-icon"></i>
                     </div>
-                    <h3><b>Comfortable Rooms</b></h3>
-                    <p>Experience the most comfortable rooms with all the necessary amenities for a perfect stay.</p>
+                    <h3><b>Driving License Assistance</b></h3>
+                    <p>Guided support throughout the driving license application and test preparation, ensuring you’re
+                        road-ready in Canada.</p>
                 </div>
+
                 <!-- Feature card 2 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="icon-bg">
-                        <i class="fas fa-wifi feature-icon"></i>
+                        <i class="fas fa-id-card feature-icon"></i>
                     </div>
-                    <h3><b>High-speed WiFi</b></h3>
-                    <p>Stay connected with our high-speed WiFi ensuring you can work or stream without any
-                        interruptions.</p>
+                    <h3><b>SIN Number Application</b></h3>
+                    <p>Expert assistance in acquiring your Social Insurance Number, a key requirement for working in
+                        Canada.</p>
                 </div>
+
                 <!-- Feature card 3 -->
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="icon-bg">
-                        <i class="fas fa-concierge-bell feature-icon"></i>
+                        <i class="fas fa-book-open feature-icon"></i>
                     </div>
-                    <h3><b>24/7 Services</b></h3>
-                    <p>Our staff is available 24/7 ensuring all your needs are taken care of anytime.</p>
+                    <h3><b>Driving Test Preparation</b></h3>
+                    <p>Benefit from our preparatory sessions and resources to ensure you pass your driving test with
+                        flying colors.</p>
                 </div>
-                <!-- ... You can add more feature cards ... -->
+
+                <!-- Feature card 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="icon-bg">
+                        <i class="fas fa-info-circle feature-icon"></i>
+                    </div>
+                    <h3><b>Information Sessions</b></h3>
+                    <p>Stay informed about the latest rules, requirements, and updates related to driving and working in
+                        Canada.</p>
+                </div>
+
+                <!-- Feature card 5 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="icon-bg">
+                        <i class="fas fa-clipboard-check feature-icon"></i>
+                    </div>
+                    <h3><b>Documentation Guidance</b></h3>
+                    <p>We guide you on all the necessary documentation for your applications, ensuring a hassle-free
+                        process.</p>
+                </div>
+
+                <!-- Feature card 6 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="icon-bg">
+                        <i class="fas fa-headset feature-icon"></i>
+                    </div>
+                    <h3><b>24/7 Support</b></h3>
+                    <p>Our dedicated team is available round the clock to assist with any queries related to driving
+                        license and SIN number services.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -854,7 +900,7 @@
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: 'house.json'
+            path: 'driving-license-sin-number.json'
         });
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
