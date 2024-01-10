@@ -1,0 +1,452 @@
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'ScalaSans'; 
+    src: url('scalasans-regular.otf') format('opentype');
+}
+i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+/* Simple animation for all services icons */
+i:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Preloader styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 999999;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #333;
+    border-radius: 100%;
+    animation: loader 1s infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Fade In Animation for Hero Content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover effect for buttons */
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Partner Logos Hover effect */
+.clients img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+/* Hover Shadow Effect for Buttons */
+.button-shadow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Floating Animation for SVG Icons */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 2s infinite;
+}
+
+/* Hover Effect for Partner Logos */
+.partner-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Fonts */
+body {
+    font-family: 'ScalaSans', Arial, sans-serif;
+}
+
+/* Hero Section with SVG */
+.hero-section {
+    position: relative;
+    padding-top: 130px;
+    /* Spacing between navbar and hero section */
+    font-size: 16px;
+    /* Adjust base font-size if necessary */
+}
+
+/* Make the SVG cover the full viewport */
+.hero-svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* 100% of viewport width */
+    height: 100vh;
+    /* 100% of viewport height */
+    z-index: -1;
+    /* Ensure it's behind the content */
+}
+
+
+/* Adjusting the hero content for enhanced appeal */
+.hero-content h1 {
+    font-weight: 600;
+    /* Poppins semi-bold */
+    color: #333;
+}
+
+.hero-content p {
+    font-weight: 400;
+    /* Open Sans regular */
+    color: #555;
+    line-height: 2rem;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-animated-gradient {
+    background: linear-gradient(to right, #f3f4f6, #fff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s infinite;
+}
+
+/* Pulsing Animation for Scroll Indicator */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scroll-indicator {
+    animation: pulse 1.5s infinite;
+}
+
+/* Service Card Enhancements */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-icon {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover .service-card-icon {
+    transform: scale(1.1);
+}
+
+.service-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.text-primary {
+    color: #3056D3;
+    /* Change this color based on your theme */
+}
+
+.text-dark {
+    color: #333;
+    /* Change this color based on your theme */
+}
+
+.text-body-color {
+    color: #777;
+    /* Change this color based on your theme */
+}
+
+.fill-current {
+    fill: currentColor;
+}
+
+/* Animation styles */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-animate {
+    animation: fadeInUp 1s forwards;
+    opacity: 0;
+    /* To start the animation from an opacity of 0 */
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
+.social-icon-hover:hover {
+    border-color: #3056D3;
+    background-color: #3056D3;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* Custom CSS */
+
+/* By default, center text for small screens */
+footer {
+    text-align: center;
+}
+
+.hero-content ul {
+    flex-direction: column;
+}
+
+.hero-content ul li {
+    margin-bottom: 10px;
+}
+
+.hero-content ul li a {
+    margin-bottom: 0;
+    margin-left: -0.75rem;
+}
+
+/* Use flexbox for the main footer content container */
+footer .container .flex-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mobile-responsive-footer {
+    justify-content: center;
+}
+
+/* On larger screens (e.g., screens wider than 768px), revert to left-aligned text and standard flex settings */
+@media (min-width: 768px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .container .flex-wrap {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hero-content ul {
+        flex-direction: row;
+    }
+
+    .hero-content ul li {
+        margin-bottom: 0;
+    }
+
+    .hero-content ul li a {
+        margin-bottom: 0;
+        margin-left: 0.75rem;
+    }
+}
+
+/* Hide the Scroll Down Indicator on small screens */
+.scroll-indicator {
+    display: none;
+}
+
+/* On larger screens (e.g., screens wider than 768px), display the Scroll Down Indicator */
+@media (min-width: 768px) {
+    .scroll-indicator {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-responsive-footer {
+        justify-content: start;
+    }
+}
+
+main {
+    padding: 3rem 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* General section styling */
+section {
+    transition: transform 0.3s, opacity 0.3s;
+    margin-top: 4.5rem;
+    opacity: 0.9;
+}
+
+section:hover {
+    transform: scale(1.01);
+    opacity: 1;
+}
+
+/* About Us Intro */
+section[data-aos="fade-up"]:nth-child(1) {
+    padding: 2rem 1rem;
+    background-color: #ebecf2e5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Subsections */
+section[data-aos="fade-up"] h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #424242;
+    transition: color 0.3s;
+    /* hover effect */
+}
+
+section[data-aos="fade-up"] h2:hover {
+    color: #6a8df5;
+    /* lighter shade on hover */
+}
+
+section[data-aos="fade-up"] p {
+    font-size: 1.2rem;
+    border-left: 4px solid #E8F5E9;
+    padding-left: 10px;
+    line-height: 2;
+    transition: padding-left 0.3s;
+    /* subtle effect on hover */
+}
+
+section[data-aos="fade-up"] p:hover {
+    padding-left: 15px;
+    /* increase padding on hover */
+}
+
+/* Why Choose Us */
+section[data-aos="fade-up"] ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section[data-aos="fade-up"] ul li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 3;
+    font-size: 1.2rem;
+    /* space for the check icon */
+}
+
+section[data-aos="fade-up"] ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: #4d6ddc;
+    font-weight: bold;
+}
+
+/* Join Us */
+section[data-aos="fade-up"]:last-child {
+    background-color: #4d6ddc;
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section[data-aos="fade-up"]:last-child h2,
+section[data-aos="fade-up"]:last-child p {
+    color: white;
+}
